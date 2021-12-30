@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#B0AAB8"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ImgButton_selectCityBar_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:backgroundTint="@color/purple_500"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:id="@+id/text_selectCityBar_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="测试标题"
+            android:textColor="#9C27B0"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edit_selectCityBar_searchBox"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:hint="通过ID搜索"
+            android:textColor="#9C27B0"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/ImgButton_selectCityBar_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:backgroundTint="@color/purple_500"
+            android:src="@mipmap/search" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView_selectCity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

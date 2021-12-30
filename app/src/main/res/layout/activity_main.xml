@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:background="#DCDCDC">
+
+        <TextView
+            android:id="@+id/main_textView_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="7"
+            android:textSize="34sp" />
+
+        <ImageButton
+            android:id="@+id/main_imgBt_reload"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#DCDCDC"
+            android:src="@mipmap/reload" />
+
+        <ImageButton
+            android:id="@+id/main_imgBt_add"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#DCDCDC"
+            android:src="@mipmap/add" />
+
+
+        <ImageButton
+            android:id="@+id/main_imgBt_love"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#DCDCDC"
+            android:src="@mipmap/to_love" />
+
+        <ImageButton
+            android:id="@+id/main_imgBt_select"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#DCDCDC"
+            android:src="@mipmap/select" />
+
+    </LinearLayout>
+
+<!--    内容-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+<!--        今日天气-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_todyweather_updateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="测试更新实践"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="今天"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_todyweather_temp"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="25C"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_todyweather_humidity"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="湿度：25%"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/text_todyweather_pm25"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="PM2.5: 5.0"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/text_todyweather_quality"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="空气质量 优"
+                android:textSize="24sp" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/text_todyweather_tempRange"-->
+<!--                android:layout_width="300dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:text="25C~30C"-->
+<!--                android:textSize="30sp" />-->
+
+        </LinearLayout>
+
+<!--        未来天气-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_moreWheather1_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="明天"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/text_moreWheather1_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="晴"
+                    android:textAlignment="center"
+                    android:textSize="34sp" />
+
+                <TextView
+                    android:id="@+id/text_moreWheather1_tempRange"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="25C~30C"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_moreWheather2_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="后天"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/text_moreWheather2_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="晴"
+                    android:textAlignment="center"
+                    android:textSize="34sp" />
+
+                <TextView
+                    android:id="@+id/text_moreWheather2_tempRange"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="25C~30C"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_moreWheather3_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="大后天"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/text_moreWheather3_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="晴"
+                    android:textAlignment="center"
+                    android:textSize="34sp" />
+
+                <TextView
+                    android:id="@+id/text_moreWheather3_tempRange"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="25C~30C"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
